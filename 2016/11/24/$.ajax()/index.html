@@ -6,14 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2016/11 | myHexo</title>
+  <title>$.ajax() | myHexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="myHexo">
-<meta property="og:url" content="http://yoursite.com/archives/2016/11/index.html">
+  <meta name="description" content="Ajax 全称为：“Asynchronous JavaScript and XML”（异步 JavaScript 和 XML），它并不是 JavaScript 的一种单一技术，而是利用了一系列交互式网页应用相关的技术所形成的结合体。使用 Ajax，我们可以无刷新状态更新页面，并且实现异步提交，提升了用户体验。
+
+Ajax 概述Ajax 这个概念是由 Jesse James Garrett 在 2">
+<meta property="og:type" content="article">
+<meta property="og:title" content="$.ajax()">
+<meta property="og:url" content="http://yoursite.com/2016/11/24/$.ajax()/index.html">
 <meta property="og:site_name" content="myHexo">
+<meta property="og:description" content="Ajax 全称为：“Asynchronous JavaScript and XML”（异步 JavaScript 和 XML），它并不是 JavaScript 的一种单一技术，而是利用了一系列交互式网页应用相关的技术所形成的结合体。使用 Ajax，我们可以无刷新状态更新页面，并且实现异步提交，提升了用户体验。
+
+Ajax 概述Ajax 这个概念是由 Jesse James Garrett 在 2">
+<meta property="og:updated_time" content="2016-11-27T13:13:01.166Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="myHexo">
+<meta name="twitter:title" content="$.ajax()">
+<meta name="twitter:description" content="Ajax 全称为：“Asynchronous JavaScript and XML”（异步 JavaScript 和 XML），它并不是 JavaScript 的一种单一技术，而是利用了一系列交互式网页应用相关的技术所形成的结合体。使用 Ajax，我们可以无刷新状态更新页面，并且实现异步提交，提升了用户体验。
+
+Ajax 概述Ajax 这个概念是由 Jesse James Garrett 在 2">
   
     <link rel="alternative" href="/atom.xml" title="myHexo" type="application/atom+xml">
   
@@ -145,182 +155,128 @@
 </nav>
 
       <div class="body-wrap">
+        <article id="post-$.ajax()" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
         
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/11/24/$.ajax()/" class="archive-article-date">
-  	<time datetime="2016-11-23T16:00:00.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-24</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/11/24/$.ajax()/">$.ajax()</a>
+    <h1 class="article-title" itemprop="name">
+      $.ajax()
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>Ajax 全称为：“Asynchronous JavaScript and XML”（异步 JavaScript 和 XML），它并不是 JavaScript 的一种单一技术，而是利用了一系列交互式网页应用相关的技术所形成的结合体。使用 Ajax，我们可以无刷新状态更新页面，并且实现异步提交，提升了用户体验。</p>
+</blockquote>
+<h3 id="Ajax-概述"><a href="#Ajax-概述" class="headerlink" title="Ajax 概述"></a>Ajax 概述</h3><p>Ajax 这个概念是由 Jesse James Garrett 在 2005 年发明的。它本身不是单一技术，是一串技术的集合，主要有：</p>
+<ul>
+<li>1.JavaScript，通过用户或其他与浏览器相关事件捕获交互行为； </li>
+<li>2.XMLHttpRequest 对象，通过这个对象可以在不中断其它浏览器任务的情况下向服务器发送请求；</li>
+<li>3.服务器上的文件，以 XML、HTML 或 JSON 格式保存文本数据；</li>
+<li>4.其它 JavaScript，解释来自服务器的数据（比如 PHP 从 MySQL 获取的数据）并将其呈现到页面上。<a id="more"></a>
+</li>
+</ul>
+<p>由于 Ajax 包含众多特性，优势与不足也非常明显。优势主要以下几点：</p>
+<ul>
+<li>1.不需要插件支持（一般浏览器且默认开启 JavaScript 即可）；</li>
+<li>2.用户体验极佳（不刷新页面即可获取可更新的数据）；</li>
+<li>3.提升 Web 程序的性能（在传递数据方面做到按需放松，不必整体提交）；</li>
+<li>4.减轻服务器和带宽的负担（将服务器的一些操作转移到客户端）；</li>
+</ul>
+<p>而 Ajax 的不足有以下几点：</p>
+<ul>
+<li>1.不同版本的浏览器度 XMLHttpRequest 对象支持度不足(比如 IE5 之前)；</li>
+<li>2.前进、后退的功能被破坏（因为 Ajax 永远在当前页，不会几率前后页面）；</li>
+<li>3.搜索引擎的支持度不够（因为搜索引擎爬虫还不能理解 JS 引起变化数据的内容）；</li>
+<li>4.开发调试工具缺乏（相对于其他语言的工具集来说，JS 或 Ajax 调试开发少的可怜）。</li>
+</ul>
+<h3 id="ajax-基本结构"><a href="#ajax-基本结构" class="headerlink" title="$.ajax()基本结构"></a>$.ajax()基本结构</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">button</span>&gt;</span>按钮<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"jquery-1.12.4.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line">			$(function()&#123;</div><div class="line">				$('button').click(function()&#123;</div><div class="line">					$.ajax(&#123;</div><div class="line">						type:"get",		//get/post</div><div class="line">						url:"test.php",	//地址</div><div class="line">						async:true,		//是否异步</div><div class="line">						data:&#123;			//传参</div><div class="line">							url: 'sram'</div><div class="line">						&#125;,</div><div class="line">						//success 成功以后的回调函数</div><div class="line">						success : function (response, status, xhr)&#123; </div><div class="line">							$('h1').html(response);</div><div class="line">						&#125;,</div><div class="line">						//出错的时候,走这儿</div><div class="line">						error: function()&#123;</div><div class="line">							alert('err')</div><div class="line">						&#125;</div><div class="line">					&#125;);</div><div class="line">				&#125;)</div><div class="line">			&#125;)</div><div class="line">		<span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/11/24/$.ajax()/" class="archive-article-date">
+  	<time datetime="2016-11-23T16:00:00.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-24</time>
+</a>
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags"></i>
 		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ajax-基本结构/">$.ajax()基本结构</a></li></ul>
 	</div>
 
-          
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/11/22/angular-$http百度搜索/" class="archive-article-date">
-  	<time datetime="2016-11-22T02:38:22.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/11/22/angular-$http百度搜索/">Angular-$http百度搜索</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/h6-color-f00-Angular搜索-h6/"><h6 color="#f00">Angular搜索</h6></a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/p-color-ff945c-快捷方式-p/"><p color="#ff945c">快捷方式</p></a></li></ul>
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2016/11/22/angular-$http百度搜索/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Angular-$http百度搜索</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
 	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/11/17/angular 过滤 、排序+查找/" class="archive-article-date">
-  	<time datetime="2016-11-17T07:17:49.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/11/17/angular 过滤 、排序+查找/">Angular查找</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Angular查找/">Angular查找</a></li></ul>
-	</div>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/11/16/angular购物车/" class="archive-article-date">
-  	<time datetime="2016-11-15T16:00:00.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-16</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/11/16/angular购物车/">Angular购物车</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Angular购物车/">Angular购物车</a></li></ul>
-	</div>
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="$.ajax()" data-title="$.ajax()" data-url="http://yoursite.com/2016/11/24/$.ajax()/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/11/03/tab选项卡/" class="archive-article-date">
-  	<time datetime="2016-11-03T06:22:04.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/11/03/tab选项卡/">三种方式的tab选项卡</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jQuery/">jQuery</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/原生js/">原生js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/闭包/">闭包</a></li></ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
       </div>
@@ -343,8 +299,8 @@
 		mathjax: false,
 		animate: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
