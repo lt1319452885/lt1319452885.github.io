@@ -83,7 +83,7 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="https://github.com/lt1319452885" title="github">github</a>
+					<a class="github" target="_blank" href="https://github.com/lt1319452885/lt1319452885.github.io" title="github">github</a>
 		        
 					<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
 		        
@@ -130,7 +130,7 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="https://github.com/lt1319452885" title="github">github</a>
+						<a class="github" target="_blank" href="https://github.com/lt1319452885/lt1319452885.github.io" title="github">github</a>
 			        
 						<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
 			        
@@ -146,6 +146,76 @@
 
       <div class="body-wrap">
         
+  
+    <article id="post-tab选项卡" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>title: 三种方式的tab选项卡</p>
+<p>&lt;!DOCTYPE html&gt;</p>
+<html><br>    <head><br>        <meta charset="utf-8"><br>        <title></title><br>        <style type="text/css"><br>            li{<br>                width: 200px;<br>                height: 100px;<br>                margin-bottom: 10px;<br>            }<br>            .active{<br>                background: #ff0;<br>            }<br>        </style><br>    </head><br>    <body><br>        <ul><br>            <li class="active"></li><br>            <li></li><br>            <li></li><br>        </ul><br>        <div class=""><br>            <p class="active">11</p><br>            <p>22</p><br>            <p>33</p><br>        </div><br>        <script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script><br>        <script type="text/javascript"><br>            var aLi=document.querySelectorAll(‘li’);<br>            var aP=document.querySelectorAll(‘p’);<br>//            for(var i=0,len=aLi.length;i<len;i++){
+//                aLi[i].index=i;
+//                aLi[i].onclick=function(){
+//                    var _index=this.index;
+//                    for(var j=0,len=aLi.length;j<len;j++){
+//                        aLi[j].className='';
+//                        aP[j].className='';
+//                    }
+//                    aLi[_index].className='active';
+//                    aP[_index].className='active';
+//                }
+//                
+//            }
+
+            $('li').on('click',function(){
+                var _index=$(this).index();
+                $(this).addClass('active').siblings().removeClass('active');
+                $('p').eq(_index).addClass('active').siblings().removeClass('active');
+            })
+
+//            for(i=0,len=aLi.length;i<len;i++){
+//                (function(index){
+//                    aLi[index].onclick=function(){
+//                        for(var j=0;j<len;j++){
+//                            aLi[j].classList.remove('active');
+//                            aP[j].classList.remove('active');
+//                        }
+//                        this.classList.add('active');
+//                        aP[index].classList.add('active');
+//                    }
+//                })(i)
+//            }
+
+        </script><br>    </body><br></html>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/11/27/tab选项卡/" class="archive-article-date">
+  	<time datetime="2016-11-27T09:24:00.221Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-27</time>
+</a>
+      
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
   
     <article id="post-进度条" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -165,20 +235,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="Responsive-Web-Design-RWD"><a href="#Responsive-Web-Design-RWD" class="headerlink" title="Responsive Web Design(RWD)"></a>Responsive Web Design(RWD)</h3><ul>
-<li>Bootstrap</li>
-<li>AmazeUI</li>
-<li>Materialize</li>
-</ul>
-<h3 id="Bootstrap"><a href="#Bootstrap" class="headerlink" title="Bootstrap"></a>Bootstrap</h3><h4 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h4><ul>
-<li>官网下载</li>
-<li>包管理工具<ul>
-<li>npm install bootstrap</li>
-<li>npm install bower -&gt; bower install bootstrap</li>
-</ul>
-</li>
-<li>git clone <a href="https://github.com/twbs/bootstrap.git">https://github.com/twbs/bootstrap.git</a></li>
-<li>github download<h4 id="strat"><a href="#strat" class="headerlink" title="strat"></a>strat</h4>
+        <h4 id="strat"><a href="#strat" class="headerlink" title="strat"></a>strat</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"zh-CN"</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"</span> /&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"IE=edge"</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"renderer"</span> <span class="attr">content</span>=<span class="string">"webkit"</span>/&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">type</span>=<span class="string">"text/css"</span> <span class="attr">href</span>=<span class="string">"css/bootstrap.css"</span>/&gt;</span></div><div class="line">		<span class="comment">&lt;!--[if lt IE 9]&gt;</div><div class="line">      &lt;script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"&gt;&lt;/script&gt;</div><div class="line">      &lt;script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"&gt;&lt;/script&gt;</div><div class="line">    &lt;![endif]--&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">head</span>&gt;</span></div></pre></td></tr></table></figure>
         <p class="article-more-link">
           <a class="article-more-a"  href="/2016/10/29/进度条/#more">more >></a>
         </p>
@@ -196,11 +253,6 @@
 	</div>
 
       
-	<div class="article-category tagcloud">
-	<i class="icon-price-tags"></i>
-	<a class="article-category-link" href="/categories/下载安装/">下载安装</a><a class="article-category-link" href="/categories/下载安装/基础模板/">基础模板</a>
-	</div>
-
 
       <div class="clearfix"></div>
     </div>
@@ -337,11 +389,11 @@
   	        
   	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://iconfont.cn/plus">矢量图标库</a>
   	        
-  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接3</a>
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.itnose.net/detail/6493353.html">搭建博客教程</a>
   	        
-  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接4</a>
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.jianshu.com/p/1e402922ee32/">入门指南——Markdown</a>
   	        
-  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接5</a>
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://gold.xitu.io/post/582ffaf9da2f600063f40660">用github来展示你的前端页面吧</a>
   	        
   	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接6</a>
   	        
